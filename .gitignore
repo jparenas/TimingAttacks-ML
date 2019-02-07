@@ -1,0 +1,6 @@
+data/
+venv/
+xgboost/
+LightGBM/
+
+.DS_Store
