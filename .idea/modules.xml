@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/StatisticalML.iml" filepath="$PROJECT_DIR$/.idea/StatisticalML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TimingAttacks-ML.iml" filepath="$PROJECT_DIR$/.idea/TimingAttacks-ML.iml" />
     </modules>
   </component>
 </project>

@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cf13471-d18f-4468-9d38-4231d708aab2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/crypt_interface.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/StatisticalML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TimingAttacks-ML.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/encryption_interface.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,10 +19,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/encryption_interface.py">
+        <entry file="file://$PROJECT_DIR$/crypt_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
+            <state relative-caret-position="483">
+              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+              <folding>
+                <element signature="e#141#154#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,13 +42,15 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/encryption_interface.py" />
+        <option value="$PROJECT_DIR$/crypt_interface.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="798" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1920" />
+    <option name="y" value="-73" />
+    <option name="width" value="1920" />
+    <option name="height" value="975" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -49,18 +58,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="StatisticalML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="StatisticalML" type="462c0819:PsiDirectoryNode" />
+              <item name="TimingAttacks-ML" type="b2602c69:ProjectViewProjectNode" />
+              <item name="TimingAttacks-ML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -84,7 +93,7 @@
   </component>
   <component name="RunManager">
     <configuration name="TimingAttacks-ML" type="PythonConfigurationType" factoryName="Python">
-      <module name="StatisticalML" />
+      <module name="TimingAttacks-ML" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -106,7 +115,7 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="StatisticalML" />
+      <module name="TimingAttacks-ML" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
@@ -147,27 +156,30 @@
       <workItem from="1549559717413" duration="192000" />
       <workItem from="1549559930215" duration="143000" />
       <workItem from="1549657258333" duration="5000" />
-      <workItem from="1549936006811" duration="1098000" />
+      <workItem from="1549936006811" duration="1256000" />
+      <workItem from="1549982482748" duration="41000" />
+      <workItem from="1549982758675" duration="268000" />
+      <workItem from="1550272839648" duration="3550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6922000" />
+    <option name="totallyTimeSpent" value="10939000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="798" extended-state="0" />
+    <frame x="-1920" y="-73" width="1920" height="975" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28223497" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="1" />
       <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Python Console" order="3" sideWeight="0.49856734" visible="true" weight="0.32954547" />
-      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50143266" side_tool="true" weight="0.32956153" />
+      <window_info anchor="bottom" id="Python Console" order="3" sideWeight="0.4978678" visible="true" weight="0.26220205" />
+      <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5021322" side_tool="true" weight="0.26220205" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.3291714" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
@@ -178,8 +190,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="2" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="3" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="4" weight="0.25" />
-      <window_info anchor="right" id="Terminal" order="5" sideWeight="0.4851695" visible="true" weight="0.26862463" />
-      <window_info anchor="right" x="0" y="0" width="310" height="601" id="Documentation" order="6" sideWeight="0.5148305" side_tool="true" weight="0.3295129" />
+      <window_info active="true" anchor="right" id="Terminal" order="5" sideWeight="0.48" visible="true" weight="0.40191898" />
+      <window_info anchor="right" x="0" y="0" width="310" height="601" id="Documentation" order="6" sideWeight="0.52" side_tool="true" visible="true" weight="0.40191898" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,10 +227,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/encryption_interface.py">
+    <entry file="file://$PROJECT_DIR$/crypt_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="70" selection-start-line="3" selection-start-column="70" selection-end-line="3" selection-end-column="70" />
+        <state relative-caret-position="483">
+          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+          <folding>
+            <element signature="e#141#154#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
