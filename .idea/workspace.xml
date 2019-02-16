@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cf13471-d18f-4468-9d38-4231d708aab2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/crypt_interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/StatisticalML.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/TimingAttacks-ML.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/encryption_interface.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/crypt_interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/crypt_interface.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,13 +15,18 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crypt_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+            <state relative-caret-position="528">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#141#154#0" expanded="true" />
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cli_interface.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -77,7 +76,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -159,12 +158,12 @@
       <workItem from="1549936006811" duration="1256000" />
       <workItem from="1549982482748" duration="41000" />
       <workItem from="1549982758675" duration="268000" />
-      <workItem from="1550272839648" duration="3550000" />
+      <workItem from="1550272839648" duration="3806000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10939000" />
+    <option name="totallyTimeSpent" value="11195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-73" width="1920" height="975" extended-state="6" />
@@ -227,10 +226,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cli_interface.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/crypt_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="41" column="18" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
+        <state relative-caret-position="528">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
           <folding>
             <element signature="e#141#154#0" expanded="true" />
           </folding>

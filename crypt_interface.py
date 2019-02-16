@@ -39,6 +39,4 @@ class MyInterface():
         self.algo = random.choice(JOB_TO_CHOICES[job])
 
         if job == 'cipher':
-            key =
-
-    def
+            key = None  # some random string
