@@ -9,6 +9,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="PyDocumentationSettings">
+    <option name="myDocStringFormat" value="Plain" />
     <option name="renderExternalDocumentation" value="true" />
   </component>
   <component name="TestRunnerService">

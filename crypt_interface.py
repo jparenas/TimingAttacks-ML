@@ -39,4 +39,13 @@ class MyInterface():
         self.algo = random.choice(JOB_TO_CHOICES[job])
 
         if job == 'cipher':
-            key = None  # some random string
+            self.key = generate_random_string(random.randint(5, 11))
+
+
+def generate_random_string(length):
+    """
+    Return a random string of ASCII letters and digits (0...9) of a specific
+    length.
+    """
+    return ''.join([random.choice(string.ascii_letters + string.digits)
+                    for _ in range(length)])
