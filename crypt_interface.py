@@ -1,7 +1,6 @@
 """
 crypt_interface.py
 
-Author: Quan Nguyen
 This interface contains multiple methods to encrypt and decrypt a message.
 """
 
@@ -10,42 +9,79 @@ import random
 import string
 
 # Third-party libraries
-from Crypto.Cipher import AES, Blowfish, DES
 from Crypto.Hash import MD5, SHA256, SHA512
-from Crypto.PublicKey import RSA
+
+# TODO: add in bcrypt
 
 
 # Global variables
-JOB_TO_CHOICES = {
-    'cipher': [AES, Blowfish, DES],
-    'hash': [MD5, SHA256, SHA512],
-    'public-key': [RSA]
-}
+ALGOS = [MD5, SHA256, SHA512]  # list of encryption algorithms to be used
+LENGTH = 20  # length for randomly generated salt
 
-class MyInterface():
+class EncryptInterface():
     """
-    This class takes in a string in its constructor to specify the job to be
-    done, which has to be one of 'cipher', 'hash', or 'public-key'.
-    A random algorithm will then be selected with respect to the job.
+    This class provides an interface to store and check passwords.
+
+    If not prvovided an encryption algorithm when initialized, a random one
+    will be chosen from the global variable `ALGOS` above. An interface object
+    will store a number of correct (salted and hashed) passwords in a
+    dictionary (so that look-up time can be O(1)).
     """
-    def __init__(self, job=None):
-        # checking for invalid values for job
-        if job not in JOB_TO_CHOICES:
-            message = 'Invalid job type.' + \
-                      f'Please choose among {JOB_TO_CHOICES.keys()}'
-            raise ValueError(message)
+    def __init__(self, algo=None):
+        # choose a random algorithm from `ALGOS`
+        if algo is None:
+            self.algo = random.choice(ALGOS)
+            algo_str = str(self.algo).split()[1].split('.')[-1][:-1]
+            print('Using', algo_str)
+        else:
+            self.algo = algo
 
-        self.job = job
-        self.algo = random.choice(JOB_TO_CHOICES[job])
+        self.passwords = {}  # dictionary for O(1) look-up time
+        self.salt = generate_random_string(LENGTH)
 
-        if job == 'cipher':
-            self.key = generate_random_string(random.randint(5, 11))
+    def run(self):
+        """To be used for debugging purposes"""
+        while True:
+            input_ = input('Enter password: ')
+            if self.check_password(input_):
+                print('Password correct!')
+                break
+
+            print('Try again...')
+
+    def digest_string(self, string):
+        """Salt and decrypt a string"""
+        string += self.salt
+        string = string.encode('ascii')
+        string = self.algo.new(string).hexdigest()
+
+        return string
+
+    def add_password(self, password):
+        """Add a password in the dictionary of correct passwords"""
+        self.passwords[self.digest_string(password)] = True
+
+    def check_password(self, to_check):
+        """
+        Check to see if a specific string is in the dictionary of correct
+        passwords
+        """
+        return self.digest_string(to_check) in self.passwords
 
 
 def generate_random_string(length):
     """
-    Return a random string of ASCII letters and digits (0...9) of a specific
-    length.
+    Generate a random string of a specific length, consisting of upper-case
+    characters and numbers
     """
-    return ''.join([random.choice(string.ascii_letters + string.digits)
+    return ''.join([random.choice(string.ascii_uppercase + string.digits)
                     for _ in range(length)])
+
+
+if __name__ == '__main__':
+    interface = EncryptInterface()
+    interface.add_password('apple')
+    interface.add_password('qwe123')
+    interface.add_password('12345679')
+
+    interface.run()
