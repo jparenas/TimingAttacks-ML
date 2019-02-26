@@ -7,6 +7,7 @@ This file contains code to run a Flask server to add and check passwords.
 import os
 from flask import Flask, request
 from crypt_interface import EncryptInterface
+import argparse
 
 
 class UserApp():
@@ -42,6 +43,13 @@ class UserApp():
         return app
 
 
+parser = argparse.ArgumentParser()
+parser.add_argument('--algorithm', dest='algo', default=0, type=int,
+                    help='index of the encryption algorithm')
+
+args = parser.parse_args()
+algo = args.algo
+
 if __name__ == '__main__':
-    app = UserApp()
+    app = UserApp(algo)
     app.create_app().run()

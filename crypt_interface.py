@@ -31,10 +31,11 @@ class EncryptInterface():
         # choose a random algorithm from `ALGOS`
         if algo is None:
             self.algo = random.choice(ALGOS)
-            algo_str = str(self.algo).split()[1].split('.')[-1][:-1]
-            print('Using', algo_str)
         else:
-            self.algo = algo
+            self.algo = ALGOS[algo]
+
+        algo_str = str(self.algo).split()[1].split('.')[-1][:-1]
+        print('Using', algo_str)
 
         self.passwords = {}  # dictionary for O(1) look-up time
         self.salt = generate_random_string(LENGTH)
