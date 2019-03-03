@@ -21,7 +21,7 @@ ALGO_DICT = {
 N_REQUESTS = 10000
 LENGTHS = [10, 32, 100, 320, 1000]
 
-f = open('data/data_v2.csv', 'w')
+f = open('data/train.csv', 'w')
 writer = csv.writer(f)
 writer.writerow(['text', 'length', 'time', 'algo'])
 
@@ -55,8 +55,8 @@ for index, algo in ALGO_DICT.items():
         duration = time.time() - since
         writer.writerow([to_check, length, duration, algo])
 
-        if i % 1000 == 0:
-            print(f'Finished making {i+1} requests')
+        if (i+1) % 100 == 0:
+            print(f'Finished making {i+1} requests for {algo}')
 
     proc.kill()  # ending the Django server process
 
