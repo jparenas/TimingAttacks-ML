@@ -18,10 +18,10 @@ ALGO_DICT = {
     2: 'SHA512'
 }
 
-N_REQUESTS = 10000
+N_REQUESTS = 20000
 LENGTHS = [10, 32, 100, 320, 1000]
 
-f = open('data/train.csv', 'w')
+f = open('data/train_v2.csv', 'w')
 writer = csv.writer(f)
 writer.writerow(['text', 'length', 'time', 'algo'])
 
